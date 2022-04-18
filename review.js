@@ -191,6 +191,7 @@ const tia = ['teo', 'the', 'syntax', 'of', 'this', 'is', 'cleaner']
 // Swathi said don't forget each person. No person left behind! Use forEach() to iterate over the array perscholas. Inside the function, create a variable with the string "PS". Print their name in the console concatenated with the variable. 
 const perscholas = ['Amira', 'Arely', 'Jonathan']
 
+perscholas.forEach(element => console.log(element + " PS"));
 // =================================================
 //                     ARRAYS
 // =================================================
@@ -447,11 +448,14 @@ console.log(bulbasaur.abilities[0])
 // Print cut
 console.log(bulbasaur.moves[2])
 // Print Bulbahhhh!!!!!
-console.log(bulbasaur.sound()) //why does undefined pop-up?
+console.log(bulbasaur.sound()) //why does undefined pop-up? function returns undefined if a value is not returned
 // Add a height of 7 to bulbasaur using the dot notation. (Don't change bulbasaur object manually)
-
-// Add a property called order and assign it a value of 1 using the square brackets. (Don't change bulbasaur object manually)
-
+bulbasaur.height = 7;
+bulbasaur['height'] = 7
+console.log(bulbasaur.height)
+// Add a property called order and assign it a value of 1 using the square brackets. (Don't change bulbasaur object manually)2
+bulbasaur['order'] = 1;
+console.log(bulbasaur.order)
 // Print an array that contains every single properties in bulbasaur
 for (property in bulbasaur){
   console.log(property.split(","))
@@ -465,4 +469,4 @@ let text = " ";
 for (x in bulbasaur){
   text+= bulbasaur[x]+ " "
   }
-  console.log(text.split(",")) //Need help with this!!!!!!!!!!!!!!
+  console.log(text.split(",")) //Need help with this!!!!!!!!
