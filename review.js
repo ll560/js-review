@@ -176,13 +176,13 @@ for (property in whateverQueenBeySaid){
   console.log(property)
 }
 
-// Using (FOR IN LOOP), print the indexes of the array. -----------????
+// Using (FOR IN LOOP), print the indexes of the array. -----------???? For/in gives indexes
 const lana = ['l', 'a', 'n', 'a']
 for(x in lana){
-  console.log(lana.indexOf(x));
+  console.log(x, '<----');
 }
 
-// USE (FOR OF LOOP)!
+// USE (FOR OF LOOP)!  For/of gives the actual values 
 const tia = ['teo', 'the', 'syntax', 'of', 'this', 'is', 'cleaner']
   for (const x of tia){
     console.log(x)
@@ -448,11 +448,11 @@ console.log(bulbasaur.abilities[0])
 // Print cut
 console.log(bulbasaur.moves[2])
 // Print Bulbahhhh!!!!!
-console.log(bulbasaur.sound()) //why does undefined pop-up? function returns undefined if a value is not returned
+bulbasaur.sound() //why does undefined pop-up? function returns undefined if a value is not returned
 // Add a height of 7 to bulbasaur using the dot notation. (Don't change bulbasaur object manually)
 bulbasaur.height = 7;
 bulbasaur['height'] = 7
-console.log(bulbasaur.height)
+console.log(bulbasaur.height, '<--')
 // Add a property called order and assign it a value of 1 using the square brackets. (Don't change bulbasaur object manually)2
 bulbasaur['order'] = 1;
 console.log(bulbasaur.order)
